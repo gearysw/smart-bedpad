@@ -1,0 +1,23 @@
+int pad_in = D0;
+int pad_out = D1;
+Timer pad_elapsed(1000,send_alert);
+
+void setup {
+  pinMode(pad_in, INPUT);
+  pinMode(pad_out, OUTPUT);
+}
+
+void loop {
+  while (pad_in = 1) {
+    if (pad_in = 0) {
+      break;
+    }
+  }
+  pad_elapsed.start();
+}
+
+void send_alert() {
+  digitalWrite(pad_out,HIGH);
+  delay(50);
+  digitalWrite(pad_out,LOW);
+}
